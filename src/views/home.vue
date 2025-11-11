@@ -1,6 +1,6 @@
 <template>
-    <div name="home-container">
-        <h1>VUE3教学</h1>
+    <div class="home-container">
+        <h1>VUE3数学</h1>
         <hr>
         <Mobanyufa></Mobanyufa>
         <Shuxingbangding></Shuxingbangding>
@@ -11,6 +11,21 @@
         <Shijianchuancan></Shijianchuancan>
         <Shijianxiushifu></Shijianxiushifu>
         <Shuzubianhuazhence></Shuzubianhuazhence>
+        <Jisuanshuxing></Jisuanshuxing>
+        <Classbangding></Classbangding>
+        <Stylebangding></Stylebangding>
+        <Watchzhengting></Watchzhengting>
+        <Biaodanshujvbangding></Biaodanshujvbangding>
+        <Mobanyinyong></Mobanyinyong>
+
+        <Zujianqiantao></Zujianqiantao>
+        <Zujianchuanzhiprops></Zujianchuanzhiprops>
+        <PropsjiaoyanA></PropsjiaoyanA>
+        <Zujianshijian></Zujianshijian>
+        <ZujianshijianVmodel></ZujianshijianVmodel>
+        <Chacaoslots></Chacaoslots>
+        <Shengmingzhouqi></Shengmingzhouqi>
+        <Shengmingzhouqiyingyong></Shengmingzhouqiyingyong>
     </div>
 </template>
 
@@ -24,7 +39,25 @@ import Shijianchuli from '../components/shijianchuli.vue';
 import Shijianchuancan from '../components/shijianchuancan.vue';
 import Shijianxiushifu from '../components/shijianxiushifu.vue';
 import Shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
-import shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
+import Jisuanshuxing from '../components/jisuanshuxing.vue';
+import Classbangding from '../components/classbangding.vue';
+import Stylebangding from '../components/stylebangding.vue';
+// import Watchzhengting from '../components/watchzhengting.vue';
+import Biaodanshujvbangding from '../components/biaodanshujvbangding.vue';
+// import Biaodanshujvbangding from '../components/biaodanshujvbangding.vue';
+// import Watchzhengting from '../components/watchzhengting.vue';
+import Watchzhengting from '../components/watchzhengting.vue';
+import Mobanyinyong from '../components/mobanyinyong.vue';
+
+import Zujianqiantao from '../components/zujianqiantao.vue';
+import Zujianchuanzhiprops from '../components/zujianchuanzhiprops.vue';
+import PropsjiaoyanA from '../components/propsjiaoyanA.vue';
+import Zujianshijian from '../components/zujianshijian.vue';
+import ZujianshijianVmodel from '../components/zujianshijianVmodel.vue';
+import Chacaoslots from '../components/chacaoslots.vue';
+import Shengmingzhouqi from '../components/shengmingzhouqi.vue';
+
+import Shengmingzhouqiyingyong from '../components/shengmingzhouqiyingyong.vue';
 export default {
     name: 'home',
     components: {
@@ -33,16 +66,33 @@ export default {
         Tiaojianxuanran,
         Liebiaoxuanran,
         Keyguanlizhuangtai,
-        Shijianchuli,
         Shijianchuancan,
         Shijianxiushifu,
-        Shuzubianhuazhence
+        Shuzubianhuazhence,
+        Shijianchuli,
+        Jisuanshuxing,
+        Classbangding,
+        Stylebangding,
+        Watchzhengting,
+        Biaodanshujvbangding,
+        Mobanyinyong,
+        Zujianqiantao,
+        
+        Zujianchuanzhiprops,
+        PropsjiaoyanA,
+        Zujianshijian,
+        ZujianshijianVmodel,
+        Chacaoslots,
+        Shengmingzhouqi,
+        Shengmingzhouqiyingyong
     },
 }
+
 </script>
 
+
 <style scoped>
-.home-container {
+.home-container{
     position: relative;
     z-index: 10;
 }

@@ -1,21 +1,26 @@
 <template>
-<div class="keyguanlizhuangtai">
-    <h3>key属性添加到v-for中</h3>
-    <div v-for="(name,index) in name" :key="index">{{  name  }} ---------- {{ index }}</div>
-    <div v-for="value in results" :key="value.gkey">
-        <p>{{ value.name }}</p>
-        <img :src="value.img" :alt="value.title"></img>
+    <div class="jisuanshuxing">
+        <hr>
+        <h3>计算属性</h3>
+        <p>{{ content.name }}</p>
+        <div>{{ content.text.length > 2 ? "yes" : "no" }}</div>
+        <div>{{ content.results.length > 0 ? (content.text1.length > 0 ? "yes" : "55555") : "22222" }}</div>
+        <p>{{ isResults }}</p>
+        <p>{{ isDatat() }}</p>
     </div>
-</div>
 </template>
 
 <script>
 export default {
-     name: 'mobanyufa', 
-     data() {
-         return {
-            name: ['张三零', '小王', '小李'],
-            results: [
+    name: 'jisuanshuxing',
+    data() {
+        return {
+            content: {
+                name: 'abccccccccccccc',
+                text: ["1","2","3"],
+                text1: [],
+                arr: [{name: "张三", id: 1},{name:"王五", id: 2},{name: "赵六", id: 3}],
+                results: [
                 {
                     "gkey": "102094960",
                     "qcmsint1": "0",
@@ -50,18 +55,24 @@ export default {
                     "img": "//p1.qhimg.com/t0147f6ec029fefe8d7.png"
                 }
             ],
-            myObject: {
-                title: '游戏列表',
-                author: 'ADAD',
-                Date: '2021-09-01'
             }
+        };
+    },
+    computed: {
+        isResults() {
+            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "yes" : "89898989") : "22222";
         }
     },
-}
-        
+    methods: {
+        isDatat() {
+            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "yes" : "77777777") : "22222";
+        }
+    }
+};
 </script>
+
 <style scoped>
-.keyguanlizhuangtai { 
-    color: g;
-     }
+.jisuanshuxing {
+    color: red;
+}
 </style>

@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "3tiaojianxuanran",
+  name: '3tiaojianxuanran',
   data() {
     return {
       flag: false,

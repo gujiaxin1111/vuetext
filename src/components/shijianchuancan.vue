@@ -10,7 +10,7 @@
 
 <script>
 export default {
-     name: "shijianchuancan", 
+     name: 'shijianchuancan', 
      data() {
          return {
             countNum: 0,
